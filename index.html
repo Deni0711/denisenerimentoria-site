@@ -60,10 +60,10 @@ a{color:inherit;text-decoration:none}
 .eyebrow{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--gold)}
 h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08}
 h2{font-size:clamp(2rem,4vw,3rem)}
-.rule{width:56px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin:18px 0 0}
-.center .rule{margin-inline:auto;background:linear-gradient(90deg,transparent,var(--gold),transparent);width:80px}
+.rule{width:56px;height:2px;background:var(--gold) url("linha-dourada.png") center/100% 100%;-webkit-mask-image:linear-gradient(90deg,#000,transparent);mask-image:linear-gradient(90deg,#000,transparent);margin:18px 0 0}
+.center .rule{margin-inline:auto;-webkit-mask-image:linear-gradient(90deg,transparent,#000,transparent);mask-image:linear-gradient(90deg,transparent,#000,transparent);width:80px}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:.95rem;transition:.25s}
-.btn-gold{background:linear-gradient(135deg,var(--gold-2),var(--gold) 55%,#b0844a);color:#1d1a12;box-shadow:0 10px 30px -10px rgba(201,160,99,.7)}
+.btn-gold{background:var(--gold) url("dourado.png") center/100% 100%;color:#1d1a12;box-shadow:0 10px 30px -10px rgba(201,160,99,.7)}
 .btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 36px -10px rgba(201,160,99,.85)}
 .btn-ghost{border:1px solid var(--line);color:var(--cream)}
 .btn-ghost:hover{border-color:var(--gold);color:var(--gold-2)}
@@ -89,7 +89,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(15,42,34,.88);backdrop-f
 .hero::after{content:"";position:absolute;top:0;bottom:0;right:0;width:62%;opacity:.42;background:url("estante-hero.jpg") 40% center/cover no-repeat;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.08) 10%,rgba(0,0,0,.3) 20%,rgba(0,0,0,.6) 30%,rgba(0,0,0,.85) 40%,#000 52%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.08) 10%,rgba(0,0,0,.3) 20%,rgba(0,0,0,.6) 30%,rgba(0,0,0,.85) 40%,#000 52%)}
 .hero-grid{z-index:1;display:grid;grid-template-columns:minmax(0,540px);align-items:center;min-height:min(78vh,680px);padding:96px 0 110px;position:relative}
 .hero h1{font-size:clamp(2.5rem,5.2vw,4.2rem);margin:18px 0 22px}
-.hero h1 em{font-style:italic;color:#b8915e;background:linear-gradient(120deg,#cfae7c 0%,#b08452 45%,#c9a670 70%,#a87f51 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero h1 em{font-style:italic;color:var(--gold);-webkit-text-fill-color:var(--gold)}
 .hero p.lead{font-size:1.12rem;color:rgba(247,241,230,.82);max-width:34em}
 .hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
 .photo-frame{position:relative;aspect-ratio:1;border-radius:var(--r);justify-self:end;width:min(100%,470px)}
