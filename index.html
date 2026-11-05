@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="only light">
+<meta name="color-scheme" content="dark light">
+<meta name="supported-color-schemes" content="dark light">
 <title>Prof. Denise Neri | Mentoria de TCC, Metodologia Científica e Currículo Lattes</title>
 <meta name="description" content="Mentoria individual para TCC, monografia e Iniciação Científica em Direito: tema, metodologia, normas ABNT e banca. Também atualização do Currículo Lattes.">
 <meta property="og:title" content="Prof. Denise Neri | Mentoria de TCC, Metodologia Científica e Currículo Lattes">
@@ -40,7 +41,7 @@
 }
 </script>
 <style>
-:root{color-scheme:only light}
+:root{color-scheme:dark light}
 :root{
   --green:#0f2a22; --green-2:#14362c; --green-3:#1c4538;
   --gold:#c9a063; --gold-2:#e2c48f; --gold-d:#8a6233;
@@ -224,6 +225,16 @@ footer{background:#0a1e18;color:rgba(247,241,230,.65);padding:52px 0 96px;font-s
   .collage .small{right:-6px}
   .servicos,.sobre,.eventos{padding:72px 0}
   .brand small{display:none}
+}
+
+@media (prefers-color-scheme: dark){
+  :root{--green:#0f2a22; --green-2:#14362c; --green-3:#1c4538;
+  --gold:#c9a063; --gold-2:#e2c48f; --gold-d:#8a6233;
+  --cream:#f7f1e6; --cream-2:#efe6d6; --ink:#1d2a25; --muted:#5d6a63;
+  --line:rgba(201,160,99,.28);
+  --serif:"Cormorant Garamond", Georgia, serif; --sans:"Inter", system-ui, sans-serif;
+  --r:18px;}
+  html,body{background-color:var(--green)}
 }
 </style>
 </head>
