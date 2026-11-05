@@ -54,7 +54,7 @@
   nav.top .links{display:flex;gap:26px;align-items:center;}
   nav.top .links a{font-size:14px;font-weight:500;text-decoration:none;color:rgba(247,241,230,.82);}
   nav.top .links a:hover{color:#e2c48f;}
-  nav.top .links a.cta{background:#c9a063 url("/dourado.png") center/100% 100%;color:#1d1a12;padding:9px 18px;border-radius:999px;font-weight:600;}
+  nav.top .links a.cta{position:relative;isolation:isolate;overflow:hidden;background:#c9a063 url("/dourado.png") center/100% 100%;color:#1d1a12;padding:9px 18px;border-radius:999px;font-weight:600;}
   .nav-toggle-input{display:none;}
   .nav-toggle-btn{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer;background:none;border:none;}
   .nav-toggle-btn span{display:block;width:22px;height:2px;background:var(--pearl);border-radius:2px;}
@@ -74,7 +74,7 @@
   .cta-box{max-width:680px;margin:8px auto 60px;padding:34px 32px;background:var(--accent-dark);border-radius:14px;text-align:center;border:1px solid rgba(201,160,99,.35);}
   .cta-box h3{color:var(--pearl);margin:0 0 10px;font-size:22px;}
   .cta-box p{color:#e6e3da;margin:0 0 20px;font-size:15.5px;}
-  .cta-box a.btn{display:inline-flex;align-items:center;gap:10px;background:#c9a063 url("/dourado.png") center/100% 100%;color:#1d1a12;font-weight:600;padding:14px 28px;border-radius:999px;text-decoration:none;font-size:15px;}
+  .cta-box a.btn{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;gap:10px;background:#c9a063 url("/dourado.png") center/100% 100%;color:#1d1a12;font-weight:600;padding:14px 28px;border-radius:999px;text-decoration:none;font-size:15px;}
   .cta-box a.btn svg{width:20px;height:20px}
 
   .back-link{display:inline-block;margin:0 0 20px;font-size:13.5px;font-weight:600;color:var(--ink-soft);text-decoration:none;}
@@ -98,6 +98,7 @@
     --gold:#c9a063; --pearl:#f7f1e6;}
   html,body{background-color:var(--paper)}
 }
+.bg-ouro{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;pointer-events:none;border-radius:inherit}
 </style>
 </head>
 <body>
@@ -115,7 +116,7 @@
       <a href="/#lattes">Lattes</a>
       <a href="/#sobre">Sobre</a>
       <a href="/blog/">Blog</a>
-      <a href="/#contato" class="cta">Fale comigo</a>
+      <a href="/#contato" class="cta"><img class="bg-ouro" src="/dourado.png" alt="" aria-hidden="true">Fale comigo</a>
     </div>
   </div>
 </nav>
@@ -174,7 +175,7 @@
 <div class="cta-box">
   <h3>Quer ajuda para deixar o seu Lattes pronto?</h3>
   <p>Faço a organização e atualização do seu currículo para seleções de mestrado, bolsas e editais de concursos públicos.</p>
-  <a class="btn" href="https://wa.me/5521973982616?text=Ol%C3%A1%2C%20li%20o%20artigo%20do%20blog%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20atualiza%C3%A7%C3%A3o%20do%20Curr%C3%ADculo%20Lattes." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.8a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.9L.1 24l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.6z"/></svg>Falar no WhatsApp</a>
+  <a class="btn" href="https://wa.me/5521973982616?text=Ol%C3%A1%2C%20li%20o%20artigo%20do%20blog%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20atualiza%C3%A7%C3%A3o%20do%20Curr%C3%ADculo%20Lattes." target="_blank" rel="noopener"><img class="bg-ouro" src="/dourado.png" alt="" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.8a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.9L.1 24l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.6z"/></svg>Falar no WhatsApp</a>
 </div>
 
 <footer>
